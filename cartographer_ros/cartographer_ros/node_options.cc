@@ -41,8 +41,7 @@ NodeOptions CreateNodeOptions(
   options.trajectory_publish_period_sec =
       lua_parameter_dictionary->GetDouble("trajectory_publish_period_sec");
   if (lua_parameter_dictionary->HasKey("publish_to_tf")) {
-    options.publish_to_tf =
-        lua_parameter_dictionary->GetBool("publish_to_tf");
+    options.publish_to_tf = lua_parameter_dictionary->GetBool("publish_to_tf");
   }
   if (lua_parameter_dictionary->HasKey("publish_tracked_pose_msg")) {
     options.publish_tracked_pose_msg =
